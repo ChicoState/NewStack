@@ -1,4 +1,11 @@
-// Adapter Stack - Oleksiy Al-saadi
+/** Adapter Stack - Oleksiy Al-saadi
+* 
+* main.cpp - Tests functionality of StackWrapper class
+* 	by creating a StackWrapper object of type <char>
+*	and calling several functions referencing
+*	the Stack functions they wrap. 
+*
+*/
 
 #include<iostream>
 
@@ -6,6 +13,7 @@ using namespace std;
 
 #include"StackWrapper.h"
 #include"Stack_Node.h"
+
 
 
 int main(){

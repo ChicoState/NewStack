@@ -1,3 +1,12 @@
+/**
+*  Stack_Node.h - Oleksiy Al-saadi
+*
+*  Implements templated type Stack data structure 
+*  using Node as a private class of Stack and
+*  Singly-linked list to connect Nodes. 
+*
+*/
+
 #ifndef STACKNODE_H
 #define STACKNODE_H
 
