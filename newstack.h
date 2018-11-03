@@ -4,25 +4,28 @@
  * @author Cole Warner
  */
 
-#include "vector.h"
+#include <vector>
 
 #ifndef NEWSTACK_H
 #define NEWSTACK_H
 
-using namespace std;
+using std::vector;
+
+//template <typename T>
 
 class NewStack
 {
-    public:
-        NewStack();
-        void push(T);
-        T pop();
-        T peek();
-        int size();
-        void removeAll();
+public:
+    NewStack();
+    void push(int x);
+    void pop();
+    int peek();
+    int size();
+    void removeAll();
 
-    private:
-        Node* current;              // pointer to the current Node
+private:
+    vector<int> myVector;
+
         
 };
 

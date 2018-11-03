@@ -4,36 +4,38 @@
  * @author Cole Warner
  */
 #include "newstack.h"
-#include "vector.h"
 
-
-void push(T)
-{
-    
-
-}
-
-
-
-T pop()
-{
-    
-
-}
-
-T peek()
+NewStack::NewStack()
 {
     
 }
 
-
-int size()
+void NewStack::push(int x)
 {
-    
+    myVector.push_back(x);
+
 }
 
 
-void removeAll()
+void NewStack::pop()
 {
-    
+    return myVector.pop_back();    
+
+}
+
+int NewStack::peek()
+{
+    return myVector.back();
+}
+
+
+int NewStack::size()
+{
+    return myVector.size();
+}
+
+
+void NewStack::removeAll()
+{
+    myVector.clear();
 }

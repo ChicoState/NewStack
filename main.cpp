@@ -1,8 +1,19 @@
+/**
+ * @file main.cpp
+ *
+ * @author Cole Warner
+ */
+
+#include <iostream>
 #include "newstack.h"
 
-int main(int argc, char **argv)
+using std::cout;
+using std::endl;
+
+
+int main()
 {
-    NewStack myStack = new NewStack();
+    NewStack myStack;
 
     myStack.push(5);
     myStack.push(6);
@@ -13,22 +24,20 @@ int main(int argc, char **argv)
     int x = myStack.peek();
 
     cout << "x is " << x << endl;
-    
-    int y = myStack.pop();
+
+    myStack.pop();
+
+    int y = myStack.peek();
 
     cout << "y is " << y << endl;
 
-
-    int z = myStack.peek();
+    int z = myStack.size();
 
     cout << "z is " << z << endl;
 
-    int a = myStack.size();
-
-    cout << "a is " << a << endl;    
-
-
     myStack.removeAll();
 
-    myStack.size();
+    cout << "empty: " << myStack.size() << endl;
+
+    return 0;
 }
